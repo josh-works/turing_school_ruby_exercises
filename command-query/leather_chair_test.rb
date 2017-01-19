@@ -1,6 +1,5 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
-require 'minitest/pride'
 require_relative 'leather_chair'
 
 class LeatherChairTest < Minitest::Test
@@ -11,7 +10,7 @@ class LeatherChairTest < Minitest::Test
   end
 
   def test_exposing_a_chair_to_sunlight_makes_it_fade
-    skip
+    
     chair = LeatherChair.new
     chair.expose_to_sunlight
     assert chair.faded?, "Exposed chairs are faded."

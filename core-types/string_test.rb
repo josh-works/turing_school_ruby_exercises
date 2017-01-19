@@ -8,23 +8,28 @@ class StringTest < Minitest::Homework
   be_gentle!
 
   def test_capitalize
-    assert_equal __, "alice".capitalize
-    assert_equal __, "alice smith".capitalize
+    assert_equal "Alice", "alice".capitalize
+    assert_equal "Alice smith", "alice smith".capitalize
   end
 
   def test_upcase
+    skip
     assert_equal __, "run!".upcase
   end
 
   def test_downcase
+    skip
     assert_equal __, "I'M OVER HERE".downcase
   end
 
   def test_check_if_all_caps
-    maybe "abc".upcase == "abc"
-    maybe "ABC".upcase == "ABC"
-    maybe "Hæ?".upcase == "Hæ?"
-    maybe "1, 2, 3".upcase == "1, 2, 3"
+    # truthy - everything except
+    # falsey - false & nil
+    #refute or assert
+    refute "abc".upcase == "abc"
+    assert "ABC".upcase == "ABC"
+    assert "Hæ?".upcase == "Hæ?"
+    assert "1, 2, 3".upcase == "1, 2, 3"
   end
 
   def test_if_all_lowercase
