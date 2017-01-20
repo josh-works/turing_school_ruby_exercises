@@ -1,3 +1,5 @@
+require_relative 'person'
+
 class Medusa
   attr_accessor :name, :statues
 
