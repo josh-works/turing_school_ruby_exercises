@@ -21,7 +21,7 @@ class Pirate
 
   def rob_ship
     @booty = 100
-    @rob_ship
+    @rob_ship 
   end
 
 end
