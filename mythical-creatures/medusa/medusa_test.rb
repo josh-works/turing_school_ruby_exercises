@@ -1,6 +1,7 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
 require_relative 'medusa'
+require_relative 'person'
 
 class MedusaTest < Minitest::Test
   def test_it_has_a_name
