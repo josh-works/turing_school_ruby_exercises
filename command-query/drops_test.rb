@@ -1,6 +1,5 @@
 gem 'minitest', '~> 5.2'
 require 'minitest/autorun'
-require 'minitest/pride'
 require_relative 'drops'
 
 class DropsTest < Minitest::Test
@@ -10,7 +9,7 @@ class DropsTest < Minitest::Test
   end
 
   def test_drip
-    skip
+  
     drops = Drops.new
     drops.drip
     assert_equal 1, drops.count
