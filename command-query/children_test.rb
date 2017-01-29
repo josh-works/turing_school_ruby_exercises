@@ -6,7 +6,6 @@ require_relative 'children'
 class ChildrenTest < Minitest::Test
   def test_nobody_is_the_eldest
     children = Children.new
-
     assert_nil children.eldest
   end
 

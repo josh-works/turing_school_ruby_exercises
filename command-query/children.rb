@@ -14,5 +14,6 @@ class Children
 
   def << (child)
     @children << child
+    binding.pry
   end
 end
