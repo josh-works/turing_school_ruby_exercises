@@ -1,6 +1,5 @@
 require 'pry'
 require_relative 'child'
-
 class Children
   attr_accessor :children
 
