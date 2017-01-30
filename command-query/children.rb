@@ -1,6 +1,5 @@
-require 'Pry'
+require 'pry'
 require_relative 'child'
-
 class Children
   attr_accessor :children
 
@@ -14,6 +13,5 @@ class Children
 
   def << (child)
     @children << child
-    binding.pry
   end
 end
