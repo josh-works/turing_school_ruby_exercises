@@ -1,4 +1,4 @@
-require 'Pry'
+require 'pry'
 require_relative 'child'
 
 class Children
@@ -14,6 +14,5 @@ class Children
 
   def << (child)
     @children << child
-    binding.pry
   end
 end

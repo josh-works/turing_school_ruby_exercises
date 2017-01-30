@@ -1,5 +1,3 @@
-require 'Pry'
-
 class Child
   attr_reader :name, :age
 
