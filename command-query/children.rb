@@ -8,10 +8,15 @@ class Children
   end
 
   def eldest
-    @children.max_by { |child| child.age }
+    children.max_by { |child| child.age }
   end
 
   def << (child)
-    @children << child
+    children << child
   end
 end
+
+children = Children.new
+children << Child.new("Robert", 2)
+children << Child.new("Fran", 8)
+children << Child.new("Hilbert", 4)
